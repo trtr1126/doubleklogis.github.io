@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>더블케이 Fulfillment / 3PL</title>
+  <style>
+    body { margin: 0; font-family: 'Noto Sans KR', sans-serif; background: #fff; color: #000; scroll-behavior: smooth; }
+    header { height: 100vh; background: url('hero-background.jpg') center/cover no-repeat; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+    header h1 { font-size: 48px; margin-bottom: 20px; }
+    header p { font-size: 20px; margin-bottom: 30px; }
+    .cta-button { background: #004aad; color: white; padding: 15px 30px; font-size: 18px; border: none; border-radius: 8px; text-decoration: none; }
+    section { padding: 60px 20px; max-width: 1200px; margin: auto; }
+    h2 { color: #004aad; margin-bottom: 20px; }
+    .slide-container { position: relative; width: 100%; overflow: hidden; border-radius: 12px; }
+    .slide-container img { width: 100%; display: none; }
+    .slide-container img.active { display: block; }
+    .service-box { border: 2px solid #004aad; border-radius: 10px; padding: 20px; background: #f8f8f8; color: #000; }
+    .service-box p { margin: 10px 0; }
+    footer { background: #eee; color: #333; text-align: center; padding: 20px; margin-top: 60px; font-size: 14px; }
+    form { display: flex; flex-direction: column; gap: 10px; margin-top: 20px; }
+    input, textarea { padding: 10px; border-radius: 4px; border: 1px solid #ccc; font-size: 16px; }
+    button { background: #004aad; color: white; padding: 12px; border: none; border-radius: 6px; font-size: 16px; cursor: pointer; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>찾아서 먼저 움직이는 물류, 더블케이입니다.</h1>
+  <p>Fulfillment & 3PL 전문 운영</p>
+  <a href="#services" class="cta-button">서비스 알아보기</a>
+</header>
+
+<section id="services">
+  <h2>서비스 소개</h2>
+  <div class="service-box">
+    <p>✅ 물류비 절감</p>
+    <p>✅ 쿠팡 로켓출고 최적화</p>
+    <p>✅ B2B 전문 출고</p>
+    <p>✅ 셀러는 판매에만 집중, 나머지는 더블케이가 책임집니다!</p>
+  </div>
+</section>
+
+<section id="center">
+  <h2>센터 사진</h2>
+  <div class="slide-container" id="centerSlide">
+    <img src="KakaoTalk_20250426_002642387.jpg" class="active">
+    <img src="KakaoTalk_20250426_002642387_02.jpg">
+    <img src="KakaoTalk_20250426_002642387_03.jpg">
+    <img src="KakaoTalk_20250426_002642387_04.jpg">
+    <img src="KakaoTalk_20250426_002642387_06.jpg">
+    <img src="KakaoTalk_20250426_002642387_08.jpg">
+    <img src="KakaoTalk_20250426_002642387_09.jpg">
+  </div>
+</section>
+
+<section id="clients">
+  <h2>주요 고객사</h2>
+  <div class="slide-container" id="logoSlide">
+    <img src="000.jpg" class="active">
+    <img src="001.jpg">
+    <img src="002.jpg">
+    <img src="003.jpg">
+    <img src="004.jpg">
+    <img src="005.jpg">
+    <img src="006.jpg">
+    <img src="007.jpg">
+    <img src="008.jpg">
+  </div>
+</section>
+
+<section id="contact">
+  <h2>간편 견적 요청</h2>
+  <form action="mailto:doublek_logis@naver.com" method="post" enctype="text/plain">
+    <input type="text" name="name" placeholder="성함/회사명" required>
+    <input type="email" name="email" placeholder="이메일 주소" required>
+    <textarea name="message" placeholder="문의내용" required></textarea>
+    <button type="submit">빠른 견적 요청하기</button>
+  </form>
+</section>
+
+<footer>
+  © 2025 더블케이로지스 | www.doubleklogis.com
+</footer>
+
+<script>
+  function startSlide(id) {
+    const container = document.getElementById(id);
+    const slides = container.querySelectorAll('img');
+    let index = 0;
+    setInterval(() => {
+      slides[index].classList.remove('active');
+      index = (index + 1) % slides.length;
+      slides[index].classList.add('active');
+    }, 2000);
+  }
+  startSlide('centerSlide');
+  startSlide('logoSlide');
+</script>
+
+</body>
+</html>
