@@ -2,59 +2,54 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <title>김포3PL · 인천3PL · 김포풀필먼트 - 더블케이 Fulfillment 전문</title>
-  <meta name="description" content="김포3PL, 인천3PL, 김포물류, 김포풀필먼트 전문 운영사 더블케이로지스. 셀러 전용 Fulfillment & B2B 출고 서비스 운영." />
-  <meta name="keywords" content="김포3PL, 인천3PL, 김포물류, 김포풀필먼트, 물류대행, 풀필먼트, 쿠팡출고, B2B출고, 더블케이" />
-  <meta name="google-site-verification" content="CkEGm8D5w7ocr93vTcakqB_b4BKGY9AONlaKUfZ_Z2k" />
-  <meta name="naver-site-verification" content="1ac32f72fd4404dc0ad44279805d48fa08035b9d" />
-  <meta property="og:title" content="더블케이 Fulfillment / 3PL" />
-  <meta property="og:description" content="찾아서 먼저 움직이는 물류, 더블케이입니다. 김포 3PL · 인천 풀필먼트 전문 운영" />
-  <meta property="og:image" content="https://www.doubleklogis.com/KakaoTalk_20250426_002642387.jpg" />
-  <meta property="og:url" content="https://www.doubleklogis.com" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <title>더블케이 Fulfillment / 3PL</title>
+  <meta name="description" content="더블케이로지스는 3PL, 풀필먼트, 쿠팡출고, B2B 전문 물류 대행 기업입니다.">
+  <meta name="keywords" content="더블케이, 3PL, 풀필먼트, 물류대행, 쿠팡출고, B2B출고, 자동화창고, 물류센터, 김포3PL, 인천3PL">
+  <meta property="og:title" content="더블케이 Fulfillment / 3PL">
+  <meta property="og:description" content="찾아서 먼저 움직이는 물류, 더블케이입니다. Fulfillment / 3PL 전문 운영">
+  <meta property="og:image" content="https://doubleklogis.github.io/KakaoTalk_20250426_002642387.jpg">
+  <meta property="og:url" content="https://doubleklogis.com">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="더블케이 Fulfillment / 3PL">
+  <meta name="twitter:description" content="찾아서 먼저 움직이는 물류, 더블케이입니다.">
+  <meta name="twitter:image" content="https://doubleklogis.github.io/KakaoTalk_20250426_002642387.jpg">
   <style>
-    body { font-family: 'Noto Sans KR', sans-serif; margin: 0; background: #fff; color: #000; scroll-behavior: smooth; }
-    header { background: #fff; color: #000; padding: 60px 20px; text-align: center; }
-    nav ul { list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; background: #004aad; }
-    nav li { margin: 0 15px; }
-    nav a { color: white; text-decoration: none; font-weight: bold; padding: 10px; display: inline-block; }
-    nav a:hover { background: #003580; border-radius: 4px; }
-    section { padding: 60px 20px; max-width: 1100px; margin: auto; }
-    h2 { color: #004aad; border-bottom: 2px solid #eee; padding-bottom: 8px; }
-    .slide-container img { width: 100%; display: none; border-radius: 8px; }
+    body { margin: 0; font-family: 'Noto Sans KR', sans-serif; background: #fff; color: #111; scroll-behavior: smooth; }
+    header { height: 100vh; background: url('hero-background.jpg') center/cover no-repeat; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: #000; }
+    header h1 { font-size: 48px; margin-bottom: 20px; }
+    header p { font-size: 20px; margin-bottom: 30px; }
+    .cta-button { background: #004aad; color: white; padding: 15px 30px; font-size: 18px; border: none; border-radius: 8px; text-decoration: none; }
+    section { padding: 60px 20px; max-width: 1200px; margin: auto; }
+    h2 { color: #004aad; margin-bottom: 20px; }
+    .service-box { background: #f0f4ff; padding: 20px; border-radius: 12px; color: #222; }
+    .slide-container { position: relative; width: 100%; overflow: hidden; border-radius: 12px; }
+    .slide-container img { width: 100%; display: none; }
     .slide-container img.active { display: block; }
-    .slide-container { position: relative; width: 100%; overflow: hidden; }
-    .cta-button { background: #004aad; color: white; padding: 12px 24px; font-size: 16px; border: none; border-radius: 6px; text-decoration: none; display: inline-block; margin-top: 20px; }
-    footer { background: #222; color: white; text-align: center; padding: 20px; font-size: 13px; margin-top: 60px; }
+    form { display: flex; flex-direction: column; gap: 12px; margin-top: 20px; }
+    input, textarea { padding: 10px; border: 1px solid #ccc; border-radius: 6px; font-size: 16px; }
+    button { background: #004aad; color: white; border: none; padding: 12px; font-size: 16px; border-radius: 6px; cursor: pointer; }
+    footer { background: #000; color: #888; text-align: center; padding: 20px; margin-top: 60px; font-size: 14px; }
   </style>
 </head>
 <body>
-
 <header>
   <h1>찾아서 먼저 움직이는 물류, 더블케이입니다.</h1>
   <p>Fulfillment & 3PL 전문 운영</p>
   <a href="#services" class="cta-button">서비스 알아보기</a>
 </header>
-
-<nav>
-  <ul>
-    <li><a href="#services">서비스 소개</a></li>
-    <li><a href="#center">센터사진</a></li>
-    <li><a href="#clients">주요 고객사</a></li>
-    <li><a href="#contact">문의하기</a></li>
-  </ul>
-</nav>
-
 <section id="services">
   <h2>서비스 소개</h2>
-  <div style="border: 1px solid #ccc; padding: 20px; border-radius: 10px;">
-    <p>✅ 김포/인천 기반 풀필먼트 센터 운영<br>✅ 쿠팡 로켓출고 & B2B 출고 가능<br>✅ 물류비 절감 최적화<br>✅ 셀러는 판매에 집중, 나머지는 더블케이가</p>
+  <div class="service-box">
+    ✅ 물류비 절감<br>
+    ✅ 쿠팡 로켓출고 최적화<br>
+    ✅ B2B 전문 출고<br>
+    ✅ 셀러는 판매에만 집중, 나머지는 더블케이가 책임집니다!
   </div>
 </section>
-
 <section id="center">
-  <h2>센터사진</h2>
+  <h2>센터 사진</h2>
   <div class="slide-container" id="centerSlide">
     <img src="KakaoTalk_20250426_002642387.jpg" class="active">
     <img src="KakaoTalk_20250426_002642387_02.jpg">
@@ -65,7 +60,6 @@
     <img src="KakaoTalk_20250426_002642387_09.jpg">
   </div>
 </section>
-
 <section id="clients">
   <h2>주요 고객사</h2>
   <div class="slide-container" id="logoSlide">
@@ -75,22 +69,26 @@
     <img src="003.jpg">
     <img src="004.jpg">
     <img src="005.jpg">
-    <img src="006.jpg">
     <img src="007.jpg">
     <img src="008.jpg">
+    <img src="009.jpg">
   </div>
 </section>
-
 <section id="contact">
-  <h2>문의하기</h2>
-  <p>이메일: doublek_logis@naver.com</p>
-  <p>카카오톡 문의: <a href="https://open.kakao.com/o/sqStQbth" target="_blank" class="cta-button">바로가기</a></p>
+  <h2>간편 견적 요청</h2>
+  <form action="mailto:doublek_logis@naver.com" method="post" enctype="text/plain">
+    <input type="text" name="name" placeholder="성함/회사명" required>
+    <input type="email" name="email" placeholder="이메일 주소" required>
+    <textarea name="message" placeholder="문의내용" required></textarea>
+    <button type="submit">빠른 견적 요청하기</button>
+  </form>
+  <p style="margin-top:30px;">📩 이메일: doublek_logis@naver.com</p>
+  <p>💬 카카오톡: <a href="https://open.kakao.com/o/sqStQbth" target="_blank" class="cta-button">카카오톡 바로가기</a></p>
+  <p>📞 전화: 010-2124-1119</p>
 </section>
-
 <footer>
   © 2025 더블케이로지스 | www.doubleklogis.com
 </footer>
-
 <script>
   function startSlide(id) {
     const container = document.getElementById(id);
@@ -105,6 +103,5 @@
   startSlide('centerSlide');
   startSlide('logoSlide');
 </script>
-
 </body>
 </html>
