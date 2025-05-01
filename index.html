@@ -4,14 +4,106 @@
 <head>
   <meta charset="UTF-8">
   <title>더블케이 Fulfillment / 3PL</title>
-  <meta name="description" content="찾아서 먼저 움직이는 물류, 더블케이 풀필먼트 / 3PL 서비스">
-  <meta property="og:title" content="더블케이 Fulfillment / 3PL" />
-  <meta property="og:description" content="찾아서 먼저 움직이는 물류, 더블케이입니다." />
-  <meta property="og:image" content="https://doubleklogis.com/ogimage.jpg" />
-  <meta property="og:url" content="https://doubleklogis.com" />
   <meta name="google-site-verification" content="CkEGm8D5w7ocr93vTcakqB_b4BKGY9AONlaKUfZ_Z2k" />
+  <meta name="naver-site-verification" content="1ac32f72fd4404dc0ad44279805d48fa08035b9d" />
+  <meta property="og:title" content="더블케이로지스 | Fulfillment & 3PL 전문" />
+  <meta property="og:description" content="찾아서 먼저 움직이는 물류, 더블케이입니다. 쿠팡 출고 / B2B 출고 / 물류비 절감" />
+  <meta property="og:image" content="https://www.doubleklogis.com/KakaoTalk_20250426_002642387.jpg" />
+  <meta property="og:url" content="https://www.doubleklogis.com" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body { font-family: 'Noto Sans KR', sans-serif; margin: 0; background: #fff; color: #000; scroll-behavior: smooth; }
+    header { background: #fff; color: #000; padding: 60px 20px; text-align: center; }
+    nav ul { list-style: none; margin: 0; padding: 0; display: flex; justify-content: center; background: #004aad; }
+    nav li { margin: 0 15px; }
+    nav a { color: white; text-decoration: none; font-weight: bold; padding: 10px; display: inline-block; }
+    nav a:hover { background: #003580; border-radius: 4px; }
+    section { padding: 60px 20px; max-width: 1100px; margin: auto; }
+    h2 { color: #004aad; border-bottom: 2px solid #eee; padding-bottom: 8px; }
+    .slide-container img { width: 100%; display: none; border-radius: 8px; }
+    .slide-container img.active { display: block; }
+    .slide-container { position: relative; width: 100%; overflow: hidden; }
+    .cta-button { background: #004aad; color: white; padding: 12px 24px; font-size: 16px; border: none; border-radius: 6px; text-decoration: none; display: inline-block; margin-top: 20px; }
+    footer { background: #222; color: white; text-align: center; padding: 20px; font-size: 13px; margin-top: 60px; }
+  </style>
 </head>
 <body>
-  <h1>더블케이 홈페이지입니다. 검색엔진 인증 및 오픈그래프 적용 완료.</h1>
+
+<header>
+  <h1>찾아서 먼저 움직이는 물류, 더블케이입니다.</h1>
+  <p>Fulfillment & 3PL 전문 운영</p>
+  <a href="#services" class="cta-button">서비스 알아보기</a>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#services">서비스 소개</a></li>
+    <li><a href="#center">센터사진</a></li>
+    <li><a href="#clients">주요 고객사</a></li>
+    <li><a href="#contact">문의하기</a></li>
+  </ul>
+</nav>
+
+<section id="services">
+  <h2>서비스 소개</h2>
+  <div style="border: 1px solid #ccc; padding: 20px; border-radius: 10px;">
+    <p>✅ 물류비 절감<br>✅ 쿠팡 로켓출고 최적화<br>✅ B2B 전문 출고 가능<br>✅ 셀러는 판매에만 집중, 나머지는 더블케이가 책임집니다!</p>
+  </div>
+</section>
+
+<section id="center">
+  <h2>센터사진</h2>
+  <div class="slide-container" id="centerSlide">
+    <img src="KakaoTalk_20250426_002642387.jpg" class="active">
+    <img src="KakaoTalk_20250426_002642387_02.jpg">
+    <img src="KakaoTalk_20250426_002642387_03.jpg">
+    <img src="KakaoTalk_20250426_002642387_04.jpg">
+    <img src="KakaoTalk_20250426_002642387_06.jpg">
+    <img src="KakaoTalk_20250426_002642387_08.jpg">
+    <img src="KakaoTalk_20250426_002642387_09.jpg">
+  </div>
+</section>
+
+<section id="clients">
+  <h2>주요 고객사</h2>
+  <div class="slide-container" id="logoSlide">
+    <img src="000.jpg" class="active">
+    <img src="001.jpg">
+    <img src="002.jpg">
+    <img src="003.jpg">
+    <img src="004.jpg">
+    <img src="005.jpg">
+    <img src="006.jpg">
+    <img src="007.jpg">
+    <img src="008.jpg">
+  </div>
+</section>
+
+<section id="contact">
+  <h2>문의하기</h2>
+  <p>이메일: doublek_logis@naver.com</p>
+  <p>카카오톡 문의: <a href="https://open.kakao.com/o/sqStQbth" target="_blank" class="cta-button">바로가기</a></p>
+</section>
+
+<footer>
+  © 2025 더블케이로지스 | www.doubleklogis.com
+</footer>
+
+<script>
+  function startSlide(id) {
+    const container = document.getElementById(id);
+    const slides = container.querySelectorAll('img');
+    let index = 0;
+    setInterval(() => {
+      slides[index].classList.remove('active');
+      index = (index + 1) % slides.length;
+      slides[index].classList.add('active');
+    }, 2000);
+  }
+
+  startSlide('centerSlide');
+  startSlide('logoSlide');
+</script>
+
 </body>
 </html>
